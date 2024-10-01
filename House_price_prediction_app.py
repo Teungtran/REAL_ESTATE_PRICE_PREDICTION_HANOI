@@ -12,7 +12,7 @@ scaler = joblib.load('scaler.pkl')
 numerical_features = ['floors', 'bedrooms', 'Area(m2)', 'length_meter', 'width_meter']
 categorical_features = {
     'housing_type': ['housing_type_Nhà biệt thự', 'housing_type_Nhà mặt phố, mặt tiền', 'housing_type_Nhà ngõ, hẻm', 'housing_type_Nhà phố liền kề'],
-    'legal_paper': ['legal_paper_Giấy tờ khác', 'legalpaperĐang chờ sổ', 'legalpaperĐã có sổ'],
+    'legal_paper': ['legal_paper_Giấy tờ khác', 'legal_paper_Đang chờ sổ','legal_paper_Đã có sổ',],
     'district': ['district_Ba Đình', 
                 'district_Bắc Từ Liê', 
                 'district_Cầu Giấy', 
@@ -345,7 +345,7 @@ if st.button('Predict Price'):
     
     # Display result
     st.subheader('KẾT QUẢ!')
-    st.write(f'Giá/m2 dự kiến  vào khoảng : {prediction[0]:.2f}triệu/m2')
+    st.write(f'Giá/m2 dự kiến  vào khoảng : {prediction[0]:.2f} triệu/m2')
 
 # Add some instructions for the user
 st.sidebar.header('HƯỚNG DẪN')
