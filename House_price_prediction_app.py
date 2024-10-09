@@ -5,7 +5,7 @@ import joblib
 import warnings
 warnings.filterwarnings('ignore')
 # Load the saved model and scaler
-model = joblib.load('model.pkl')
+model = joblib.load('RandomForestRegressor.pkl')
 scaler = joblib.load('scaler.pkl')
 # streamlit run House_price_prediction_app.py
 # Define the features
@@ -349,8 +349,8 @@ if st.button('Predict Price'):
 
 # Add some instructions for the user
 st.sidebar.header('HƯỚNG DẪN')
-st.sidebar.info('Điền thông tin chi tiết về ngôi nhà vào bảng điều khiển chính và nhấp vào nút "Dự đoán giá" để nhận giá ước tính .')
-st.sidebar.info('district : Quận/Huyện của ngôi nhà (Ví dụ: Cầu Giấy, Ba Đình, ...)\nward: Phường')
+st.sidebar.info('Điền thông tin chi tiết về ngôi nhà vào bảng điều khiển chính và nhấp vào nút "Dự đoán giá" để nhận giá ước tính trên mỗi mét vuông.')
+st.sidebar.info('district : Quận/Huyện của ngôi nhà (Ví dụ: Cầu Giấy, Ba Đình, ...)\n ward: Phường')
 
 # Add information about the model
 st.sidebar.header('THÔNG TIN VỀ MÔ HÌNH')
