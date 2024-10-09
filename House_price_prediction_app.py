@@ -345,11 +345,11 @@ if st.button('Predict Price'):
     
     # Display result
     st.subheader('KẾT QUẢ!')
-    st.write(f'Giá/m2 dự kiến  vào khoảng : {prediction[0]:.2f} triệu/m2')
+    st.write(f'Giá/m2 dự kiến  vào khoảng : {prediction[0]:.2f} Tỷ')
 
 # Add some instructions for the user
 st.sidebar.header('HƯỚNG DẪN')
-st.sidebar.info('Điền thông tin chi tiết về ngôi nhà vào bảng điều khiển chính và nhấp vào nút "Dự đoán giá" để nhận giá ước tính trên mỗi mét vuông.')
+st.sidebar.info('Điền thông tin chi tiết về ngôi nhà vào bảng điều khiển chính và nhấp vào nút "Dự đoán giá" để nhận giá ước tính .')
 st.sidebar.info('district : Quận/Huyện của ngôi nhà (Ví dụ: Cầu Giấy, Ba Đình, ...)\nward: Phường')
 
 # Add information about the model
