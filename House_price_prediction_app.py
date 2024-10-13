@@ -9,7 +9,7 @@ model = joblib.load('RandomForestRegressor.pkl')
 scaler = joblib.load('scaler.pkl')
 # streamlit run House_price_prediction_app.py
 # Define the features
-numerical_features = ['floors', 'bedrooms', 'Area(m2)', 'length_meter', 'width_meter']
+numerical_features = ['floors', 'bedrooms', 'Area(m2)', 'length_meter', 'width_meter','Price/m2']
 categorical_features = {
     'housing_type': ['housing_type_Nhà biệt thự', 'housing_type_Nhà mặt phố, mặt tiền', 'housing_type_Nhà ngõ, hẻm', 'housing_type_Nhà phố liền kề'],
     'legal_paper': ['legal_paper_Giấy tờ khác', 'legal_paper_Đang chờ sổ','legal_paper_Đã có sổ',],
