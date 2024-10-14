@@ -345,7 +345,7 @@ if st.button('Predict Price'):
     
     # Display result
     st.subheader('KẾT QUẢ!')
-    st.write(f'Giá/m2 dự kiến  vào khoảng : {prediction[0]:.2f} Tỷ')
+    st.write(f'Giá dự kiến  vào khoảng : {prediction[0]:.2f} Tỷ')
 
 # Add some instructions for the user
 st.sidebar.header('HƯỚNG DẪN')
